@@ -1,9 +1,9 @@
 const mineflayer = require('mineflayer');
 
 const botArgs = {
-    host: 'localhost',
-    port: '12345',
-    username: "Hello_world",
+    host: ' malkdz16.aternos.me',
+    port: '13174',
+    username: "malkhg41",
     version: '1.8.9'
 };
 
@@ -21,12 +21,12 @@ const initBot = () => {
         console.log(`Disconnected`);
 
         // Attempt to reconnect
-        setTimeout(initBot, 5000);
+        setTimeout(initBot, 240000);
     });
 
     bot.on('error', (err) => {
         if (err.code === 'ECONNREFUSED') {
-            console.log(`Failed to connect to ${err.address}:${err.port}`)
+            console.log(`Failed to connect to ${err. malkdz16.aternos.me}:${err.13174}`)
         }
         else {
             console.log(`Unhandled error: ${err}`);
@@ -35,3 +35,5 @@ const initBot = () => {
 };
 
 initBot();
+
+
